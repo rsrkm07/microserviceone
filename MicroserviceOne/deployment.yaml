@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: microserviceone
+  name: microserviceone
+  namespace: default
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microserviceone
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: microserviceone
+    spec:
+      containers:
+      - image: uday4r4nds/microserviceone
+        imagePullPolicy: IfNotPresent
+        name: microserviceone
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: microserviceone
+  name: microserviceone
+  namespace: default
+spec:
+  ports:
+  - nodePort: 31252
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: microserviceone
+  sessionAffinity: None
+  type: LoadBalancer

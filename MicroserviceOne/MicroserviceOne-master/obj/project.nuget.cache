@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "BmjUKLxzp7NtgAbZ4PERbJD6VHaKBQLZ1Hu6DhUVXm0kO6aHRMwzyXDEEoYMJh6DF5VagCdGBxHyOJ1BHxbYuA==",
+  "success": true,
+  "projectFilePath": "f:\\AzureCloud\\AzureCloud\\CodeBase\\MicroserviceOne\\MicroserviceOne.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KAKANI UDAY KUMAR\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\KAKANI UDAY KUMAR\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\KAKANI UDAY KUMAR\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\KAKANI UDAY KUMAR\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\KAKANI UDAY KUMAR\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\KAKANI UDAY KUMAR\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
